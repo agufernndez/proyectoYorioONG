@@ -1,0 +1,19 @@
+@import "header";
+
+$bodoni: 'Bodoni Moda', serif;
+$raleway: 'Raleway', sans-serif;
+$green: #1A8754;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: $raleway;
+    color: #535351;
+}
+

@@ -1,0 +1,16 @@
+
+.header {
+    display: flex;
+
+    .header__toggleMenu img {
+        height: 20px;
+    }
+
+    .header__logo img {
+        height: 80px;
+    }
+
+    .header__sectionNav {
+        display: none;
+    }
+}
