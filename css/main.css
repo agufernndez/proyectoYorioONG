@@ -1,7 +1,7 @@
 header {
   display: flex;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   margin-top: 20px; }
@@ -18,20 +18,41 @@ header {
     background-color: green;
     padding: 5px;
     border-radius: 5px; }
-  header .header__sectionAyudanos a {
-    color: white;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 600; }
+    header .header__sectionAyudanos a {
+      color: white;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px; }
   header .whatsApp__chat {
     position: fixed;
     height: 70px;
     bottom: 20px;
     right: 20px; }
 
+@media screen and (min-width: 730px) {
+  header .header__toggleMenu {
+    display: none; }
+  header .header__sectionNav {
+    display: contents; }
+    header .header__sectionNav ul {
+      display: flex;
+      width: 40vw;
+      justify-content: space-between; }
+    header .header__sectionNav li a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.2rem; }
+    header .header__sectionNav li a:hover {
+      text-decoration: underline; } }
+
+@media screen and (min-width: 945px) {
+  header .header__sectionAyudanos a {
+    font-size: 1.6rem; } }
+
 footer {
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
   footer .footer__sectionInfo {
     display: flex;
     text-align: center;
@@ -77,15 +98,15 @@ main .main__sectionCards {
     border-radius: 9px;
     background-color: white;
     box-shadow: 0px 4px 8px 0px #00000029; }
-  main .main__sectionCards h2 {
-    text-transform: uppercase;
-    color: green;
-    text-align: center;
-    padding-bottom: 8px;
-    font-size: 1.8rem; }
-  main .main__sectionCards p {
-    font-size: 1.4rem;
-    text-align: center; }
+    main .main__sectionCards article h2 {
+      text-transform: uppercase;
+      color: green;
+      text-align: center;
+      padding-bottom: 8px;
+      font-size: 1.8rem; }
+    main .main__sectionCards article p {
+      font-size: 1.4rem;
+      text-align: center; }
 
 main .mai__sectionInfo {
   width: 80vw;
