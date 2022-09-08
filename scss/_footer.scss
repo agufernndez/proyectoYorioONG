@@ -1,0 +1,22 @@
+footer {
+    font-size: 1.2rem;
+
+    .footer__sectionInfo {
+        display: flex;
+        text-align: center;
+        background-color: lightgrey;
+        padding: 20px;
+
+        div {
+            margin: 10px auto;
+            width: 40vw;
+        }
+    }
+
+    .footer__sectionCR {
+        padding: 7px;
+        text-align: center;
+        color: white;
+        background-color: green;
+    }
+}

@@ -1,6 +1,7 @@
 @import "header";
+@import "footer";
 
-$bodoni: 'Bodoni Moda', serif;
+$dm: 'DM Sans', sans-serif;
 $raleway: 'Raleway', sans-serif;
 $green: #1A8754;
 
@@ -17,3 +18,93 @@ html {
     color: #535351;
 }
 
+main {
+    .main__h1Index {
+        height: 60vh;
+        padding-top: 45vh;
+        font-family: $dm;
+        font-size: 3.4rem;
+        text-align: center;
+        line-height: 35px;
+        color: white;
+        background-image: url("../assets/img/portadas/index.jpg");
+
+    }
+
+    .main__sectionCards {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        
+        
+        article {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 9px;
+            background-color: white;
+            box-shadow: 0px 4px 8px 0px #00000029;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: green;
+            text-align: center;
+            padding-bottom: 8px;
+            font-size: 1.8rem;
+            
+        }
+
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+            
+        }
+    }
+
+    .mai__sectionInfo {
+        width: 80vw;
+        margin: 20px auto;
+
+        .sectionInfo__text {
+            margin: 15px 0;
+
+            h2 {
+                font-size: 1.8rem;
+                font-family: $dm;
+                color: green;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            img{
+                width: 80vw;
+                margin: 10px 0;
+            }
+            
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
+        .sectionInfo__form {
+
+            box-shadow: 0px 4px 8px 0px #00000029;            
+            border-radius: 9px;
+            height: 300px;
+            padding: 5px 0;
+
+            div {
+                // height: 30px;
+                margin: 10px;
+            }
+
+            label {
+                font-size: 1.4rem;
+                margin: 10px;
+            }
+        }
+
+        
+    }
+} 
