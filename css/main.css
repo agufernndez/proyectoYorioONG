@@ -108,29 +108,62 @@ main .main__sectionCards {
       font-size: 1.4rem;
       text-align: center; }
 
-main .mai__sectionInfo {
+main .main__sectionInfo {
   width: 80vw;
   margin: 20px auto; }
-  main .mai__sectionInfo .sectionInfo__text {
+  main .main__sectionInfo .sectionInfo__text {
     margin: 15px 0; }
-    main .mai__sectionInfo .sectionInfo__text h2 {
+    main .main__sectionInfo .sectionInfo__text h2 {
       font-size: 1.8rem;
       font-family: "DM Sans", sans-serif;
       color: green;
       text-transform: uppercase;
       text-align: center; }
-    main .mai__sectionInfo .sectionInfo__text img {
+    main .main__sectionInfo .sectionInfo__text img {
       width: 80vw;
       margin: 10px 0; }
-    main .mai__sectionInfo .sectionInfo__text p {
-      font-size: 1.4rem; }
-  main .mai__sectionInfo .sectionInfo__form {
+  main .main__sectionInfo .sectionInfo__form p {
+    font-size: 1.8rem;
+    font-family: "DM Sans", sans-serif;
+    color: green;
+    text-transform: uppercase;
+    text-align: center; }
+  main .main__sectionInfo .sectionInfo__form form {
     box-shadow: 0px 4px 8px 0px #00000029;
     border-radius: 9px;
-    height: 300px;
-    padding: 5px 0; }
-    main .mai__sectionInfo .sectionInfo__form div {
+    padding: 5px 0;
+    margin: 10px auto; }
+    main .main__sectionInfo .sectionInfo__form form div {
       margin: 10px; }
-    main .mai__sectionInfo .sectionInfo__form label {
-      font-size: 1.4rem;
-      margin: 10px; }
+      main .main__sectionInfo .sectionInfo__form form div label {
+        font-size: 1.4rem;
+        margin: 10px; }
+
+@media screen and (min-width: 945px) {
+  main .main__sectionCards {
+    width: 90vw;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    main .main__sectionCards article {
+      width: 45%;
+      justify-content: space-around;
+      margin: 20px auto; }
+  main .main__sectionInfo .sectionInfo__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    main .main__sectionInfo .sectionInfo__text h2 {
+      font-size: 2.4rem; }
+    main .main__sectionInfo .sectionInfo__text img {
+      width: 500px; }
+  main .main__sectionInfo .sectionInfo__form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+    main .main__sectionInfo .sectionInfo__form form {
+      width: 50vw; }
+    main .main__sectionInfo .sectionInfo__form p {
+      width: 40vw;
+      padding: 15px;
+      font-size: 2.4rem; } }
