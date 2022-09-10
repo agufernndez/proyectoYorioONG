@@ -37,15 +37,19 @@ header {
     display: contents; }
     header .header__sectionNav ul {
       display: flex;
-      width: 40vw;
+      width: 20vw;
       justify-content: space-between; }
-    header .header__sectionNav li a {
-      text-decoration: none;
+    header .header__sectionNav li {
       color: white;
-      text-transform: uppercase;
-      font-size: 1.2rem; }
-    header .header__sectionNav li a:hover {
-      text-decoration: underline; } }
+      text-decoration: none;
+      list-style: none; }
+      header .header__sectionNav li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2rem; }
+      header .header__sectionNav li a:hover {
+        text-decoration: underline; } }
 
 @media screen and (min-width: 945px) {
   header .header__sectionAyudanos a {
@@ -105,7 +109,7 @@ main .main__sectionCards {
       color: green;
       text-align: center;
       padding-bottom: 8px;
-      font-size: 1.8rem; }
+      font-size: 2rem; }
     main .main__sectionCards article p {
       font-size: 1.8rem;
       text-align: center; }
@@ -171,14 +175,51 @@ main .main__section {
       padding-bottom: 10px;
       text-transform: uppercase;
       color: #1A8754;
-      font-size: 1.8rem; }
+      font-size: 2rem; }
     main .main__section div p {
       font-size: 1.8rem; }
   main .main__section img {
     width: 70vw;
     margin: 15px auto; }
 
+main .main__h1Ayudanos {
+  height: 80vh;
+  padding-top: 60vh;
+  font-size: 5rem;
+  line-height: 40px;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  color: white;
+  background-image: url("../assets/img/portadas/comoAyudarnos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+main .main__donaciones {
+  width: 80vw;
+  margin: 20px auto;
+  text-align: center; }
+  main .main__donaciones h2 {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #1A8754;
+    font-size: 2rem; }
+  main .main__donaciones div {
+    font-size: 1.8rem; }
+    main .main__donaciones div a {
+      width: 500px;
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      box-shadow: 0px 4px 8px 0px #00000029; }
+  main .main__donaciones p {
+    font-size: 1.8rem;
+    margin: 10px 0; }
+
 @media screen and (min-width: 945px) {
+  main .main__h1Index {
+    height: 100vh;
+    font-size: 6.5rem;
+    line-height: 55px; }
   main .main__sectionCards {
     width: 90vw;
     flex-direction: row;
@@ -206,6 +247,9 @@ main .main__section {
       width: 40vw;
       padding: 15px;
       font-size: 2.4rem; }
+  main .main__h1Conocenos {
+    height: 100vh;
+    font-size: 6.5rem; }
   main .main__section {
     flex-direction: row;
     width: 100vw;
@@ -220,4 +264,7 @@ main .main__section {
     background: #0B59BF;
     color: white; }
     main #main__section--2 img {
-      margin-left: 0px; } }
+      margin-left: 0px; }
+  main .main__h1Ayudanos {
+    height: 100vh;
+    font-size: 6.5rem; } }

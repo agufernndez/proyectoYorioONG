@@ -53,7 +53,7 @@ main {
                 color: green;
                 text-align: center;
                 padding-bottom: 8px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 
             }
     
@@ -165,7 +165,7 @@ main {
                 padding-bottom: 10px;
                 text-transform: uppercase;
                 color: #1A8754;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             p {
@@ -181,11 +181,64 @@ main {
     }
 }
 
+// AYUDANOS ***************************************
+main {
+    .main__h1Ayudanos {
+            height: 80vh;
+            padding-top: 60vh;
+            font-size: 5rem;
+            line-height: 40px;
+            font-family: $dm;
+            text-align: center;
+            color: white;
+            background-image: url("../assets/img/portadas/comoAyudarnos.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+    }
+
+    .main__donaciones {
+        width: 80vw;
+        margin: 20px auto;
+        text-align: center;
+        
+        h2 {
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            color: #1A8754;
+            font-size: 2rem;
+        }
+
+        div {
+            font-size: 1.8rem;
+            
+            a {
+                width: 500px;
+                margin: 0 10px;
+                text-decoration: none;
+                color: black;
+                box-shadow: 0px 4px 8px 0px #00000029;
+            }
+        }
+
+        p {
+            font-size: 1.8rem;
+            margin: 10px 0;
+        }
+    }
+}
+
+
 
 @media screen and (min-width:945px) {
 // INDEX ******************************************
 
     main {
+        .main__h1Index {
+            height: 100vh;
+            font-size: 6.5rem;
+            line-height: 55px;
+        }
         .main__sectionCards {
             width: 90vw;
             flex-direction: row;
@@ -238,6 +291,11 @@ main {
 // CONOCENOS **************************************
 
     main {
+        .main__h1Conocenos {
+            height: 100vh;
+            font-size: 6.5rem;
+        }
+
         .main__section {
             flex-direction: row;
             width: 100vw;
@@ -273,4 +331,13 @@ main {
     }
 
 // FALTA MEJORAR EL DISENO DE LAS CARDS (sacar el shadow o lo que sea necesario)
+
+// AYUDANOS ***************************************
+    main {
+        .main__h1Ayudanos {
+            height: 100vh;
+            font-size: 6.5rem;
+        }
+    }
+
 }

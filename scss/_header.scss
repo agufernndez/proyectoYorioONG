@@ -62,19 +62,24 @@ header {
             
             ul {
                 display: flex;
-                width: 40vw;
+                width: 20vw;
                 justify-content: space-between;
             }
             
-            li a {
-                text-decoration: none;
+            li {
                 color: white;
-                text-transform: uppercase;
-                font-size: 1.2rem;
-            }
-
-            li a:hover {
-                text-decoration:underline;
+                text-decoration: none;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                }
+                
+                a:hover {
+                    text-decoration:underline;
+                }
             }
         }
     }
