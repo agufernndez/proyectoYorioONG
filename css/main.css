@@ -12,8 +12,23 @@ header {
       margin-left: -60px; }
   header .header__logo img {
     height: 50px; }
-  header .header__sectionNav {
-    display: none; }
+  header .header__sectionNav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  header .header__sectionNav li {
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+    list-style: none; }
+    header .header__sectionNav li a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.2rem; }
+    header .header__sectionNav li a:hover {
+      text-decoration: underline; }
   header .header__sectionAyudanos {
     background-color: green;
     padding: 5px;
@@ -36,20 +51,9 @@ header {
   header .header__sectionNav {
     display: contents; }
     header .header__sectionNav ul {
-      display: flex;
+      flex-direction: row;
       width: 20vw;
-      justify-content: space-between; }
-    header .header__sectionNav li {
-      color: white;
-      text-decoration: none;
-      list-style: none; }
-      header .header__sectionNav li a {
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        font-size: 1.2rem; }
-      header .header__sectionNav li a:hover {
-        text-decoration: underline; } }
+      justify-content: space-between; } }
 
 @media screen and (min-width: 945px) {
   header .header__sectionAyudanos a {

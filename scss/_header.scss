@@ -23,7 +23,30 @@ header {
     }
 
     .header__sectionNav {
-        display: none;
+        ul {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        li {
+            margin: 5px 0;
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            a {
+                
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+            }
+            
+            a:hover {
+                text-decoration:underline;
+            }
+        }
     }
 
     .header__sectionAyudanos {
@@ -61,25 +84,9 @@ header {
             display: contents;
             
             ul {
-                display: flex;
+                flex-direction: row;
                 width: 20vw;
                 justify-content: space-between;
-            }
-            
-            li {
-                color: white;
-                text-decoration: none;
-                list-style: none;
-                a {
-                    text-decoration: none;
-                    color: white;
-                    text-transform: uppercase;
-                    font-size: 1.2rem;
-                }
-                
-                a:hover {
-                    text-decoration:underline;
-                }
             }
         }
     }
