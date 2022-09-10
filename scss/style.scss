@@ -18,16 +18,19 @@ html {
     color: #535351;
 }
 
+// INDEX ******************************************
 main {
     .main__h1Index {
-        height: 60vh;
-        padding-top: 45vh;
+        height: 80vh;
+        padding-top: 60vh;
+        font-size: 5rem;
+        line-height: 40px;
         font-family: $dm;
-        font-size: 3.4rem;
         text-align: center;
-        line-height: 35px;
         color: white;
         background-image: url("../assets/img/portadas/index.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
 
     }
 
@@ -55,7 +58,7 @@ main {
             }
     
             p {
-                font-size: 1.4rem;
+                font-size: 1.8rem;
                 text-align: center;
                 
             }
@@ -125,13 +128,68 @@ main {
     }
 } 
 
+// CONOCENOS **************************************
+main {
+    .main__h1Conocenos {
+        height: 80vh;
+        padding-top: 60vh;
+        font-size: 5rem;
+        line-height: 40px;
+        font-family: $dm;
+        text-align: center;
+        color: white;
+        background-image: url("../assets/img/portadas/quienesSomos.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main__section {
+        display: flex;
+        flex-direction: column;
+        width: 70vh;
+        margin: 15px auto;
+
+        div {
+            padding: 10px 40px;
+            border-radius: 9px;
+            // box-shadow: 0px 4px 8px 0px #00000029;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            
+            h2 {
+                text-align: center;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+                color: #1A8754;
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+            }
+
+        }
+
+        img {
+            width: 70vw;
+            margin: 15px auto;
+        }
+    }
+}
+
+
 @media screen and (min-width:945px) {
+// INDEX ******************************************
+
     main {
         .main__sectionCards {
             width: 90vw;
             flex-direction: row;
             flex-wrap: wrap;
-            // margin: 0 auto;
 // me falta acomodar algo en las cards
             article {
                 width: 45%;
@@ -175,8 +233,44 @@ main {
                 }
             }
         }
+    };
+
+// CONOCENOS **************************************
+
+    main {
+        .main__section {
+            flex-direction: row;
+            width: 100vw;
+            justify-content: space-between;
+
+
+            img {
+                width: 500px;
+                margin-right: 0px ;
+
+            }
+
+            div {
+                width: 400px;
+
+                p {
+
+                }
+
+                
+            }
+        };
+
+        #main__section--2 {
+            flex-direction: row-reverse;
+            background: #0B59BF;
+            color: white;
+
+            img {
+                margin-left: 0px;
+            }
+        }
     }
 
-    // falta poner la imagen chiquita y al lado el formulario!!!!!!
-    
+// FALTA MEJORAR EL DISENO DE LAS CARDS (sacar el shadow o lo que sea necesario)
 }

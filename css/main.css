@@ -52,7 +52,7 @@ header {
     font-size: 1.6rem; } }
 
 footer {
-  font-size: 1.4rem; }
+  font-size: 1.6rem; }
   footer .footer__sectionInfo {
     display: flex;
     text-align: center;
@@ -78,14 +78,16 @@ html {
   color: #535351; }
 
 main .main__h1Index {
-  height: 60vh;
-  padding-top: 45vh;
+  height: 80vh;
+  padding-top: 60vh;
+  font-size: 5rem;
+  line-height: 40px;
   font-family: "DM Sans", sans-serif;
-  font-size: 3.4rem;
   text-align: center;
-  line-height: 35px;
   color: white;
-  background-image: url("../assets/img/portadas/index.jpg"); }
+  background-image: url("../assets/img/portadas/index.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 main .main__sectionCards {
   width: 80vw;
@@ -105,7 +107,7 @@ main .main__sectionCards {
       padding-bottom: 8px;
       font-size: 1.8rem; }
     main .main__sectionCards article p {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       text-align: center; }
 
 main .main__sectionInfo {
@@ -139,6 +141,43 @@ main .main__sectionInfo {
         font-size: 1.4rem;
         margin: 10px; }
 
+main .main__h1Conocenos {
+  height: 80vh;
+  padding-top: 60vh;
+  font-size: 5rem;
+  line-height: 40px;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  color: white;
+  background-image: url("../assets/img/portadas/quienesSomos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+main .main__section {
+  display: flex;
+  flex-direction: column;
+  width: 70vh;
+  margin: 15px auto; }
+  main .main__section div {
+    padding: 10px 40px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    main .main__section div h2 {
+      text-align: center;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      color: #1A8754;
+      font-size: 1.8rem; }
+    main .main__section div p {
+      font-size: 1.8rem; }
+  main .main__section img {
+    width: 70vw;
+    margin: 15px auto; }
+
 @media screen and (min-width: 945px) {
   main .main__sectionCards {
     width: 90vw;
@@ -166,4 +205,19 @@ main .main__sectionInfo {
     main .main__sectionInfo .sectionInfo__form p {
       width: 40vw;
       padding: 15px;
-      font-size: 2.4rem; } }
+      font-size: 2.4rem; }
+  main .main__section {
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between; }
+    main .main__section img {
+      width: 500px;
+      margin-right: 0px; }
+    main .main__section div {
+      width: 400px; }
+  main #main__section--2 {
+    flex-direction: row-reverse;
+    background: #0B59BF;
+    color: white; }
+    main #main__section--2 img {
+      margin-left: 0px; } }
