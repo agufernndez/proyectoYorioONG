@@ -256,7 +256,7 @@ main .main__donaciones {
     font-size: 6.5rem; }
   main .main__section {
     flex-direction: row;
-    width: 100vw;
+    width: 80vw;
     justify-content: space-between; }
     main .main__section img {
       width: 500px;
